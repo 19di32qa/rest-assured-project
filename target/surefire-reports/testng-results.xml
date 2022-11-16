@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-11-16T15:40:00 CAST" name="All Test Suite" finished-at="2022-11-16T15:40:06 CAST" duration-ms="5639">
+    <groups>
+    </groups>
+    <test started-at="2022-11-16T15:40:00 CAST" name="C:/Users/Dima/Desktop/RestAssuredProject" finished-at="2022-11-16T15:40:06 CAST" duration-ms="5639">
+      <class name="regresIN.UpdateUser">
+        <test-method signature="updateUserTest()[pri:0, instance:regresIN.UpdateUser@5bfa9431]" started-at="2022-11-16T15:40:05 CAST" name="updateUserTest" finished-at="2022-11-16T15:40:05 CAST" duration-ms="406" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateUserTest -->
+      </class> <!-- regresIN.UpdateUser -->
+      <class name="regresIN.DeleteUser">
+        <test-method signature="deleteUserTest()[pri:0, instance:regresIN.DeleteUser@2fd6b6c7]" started-at="2022-11-16T15:40:05 CAST" name="deleteUserTest" finished-at="2022-11-16T15:40:05 CAST" duration-ms="375" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteUserTest -->
+      </class> <!-- regresIN.DeleteUser -->
+      <class name="regresIN.CreateUser">
+        <test-method signature="CreateUserV1Test()[pri:0, instance:regresIN.CreateUser@6293abcc]" started-at="2022-11-16T15:40:00 CAST" name="CreateUserV1Test" finished-at="2022-11-16T15:40:04 CAST" duration-ms="3712" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CreateUserV1Test -->
+        <test-method signature="CreateUserV2Test()[pri:0, instance:regresIN.CreateUser@6293abcc]" started-at="2022-11-16T15:40:04 CAST" name="CreateUserV2Test" finished-at="2022-11-16T15:40:05 CAST" duration-ms="579" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CreateUserV2Test -->
+      </class> <!-- regresIN.CreateUser -->
+      <class name="regresIN.getUsers">
+        <test-method signature="getUsersV2Test()[pri:0, instance:regresIN.getUsers@5db250b4]" started-at="2022-11-16T15:40:05 CAST" name="getUsersV2Test" finished-at="2022-11-16T15:40:06 CAST" duration-ms="505" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getUsersV2Test -->
+      </class> <!-- regresIN.getUsers -->
+    </test> <!-- C:/Users/Dima/Desktop/RestAssuredProject -->
+  </suite> <!-- All Test Suite -->
+</testng-results>
