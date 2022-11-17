@@ -7,8 +7,9 @@ import io.restassured.specification.RequestSpecification;
 import org.testng.annotations.Test;
 import static  io.restassured.RestAssured.*;
 import static  io.restassured.matcher.RestAssuredMatchers.*;
+import static io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInClasspath;
 import static  org.hamcrest.Matchers.*;
-//import static io.restassured.module.jsv.JsonSchemaValidator.*;
+import static io.restassured.module.jsv.JsonSchemaValidator.*;
 public class getUsers {
 
 //    @Test
@@ -29,5 +30,14 @@ public class getUsers {
                 .body("data.first_name", hasItems(arr))
                 .statusCode(200).log().all();
 
+    }
+    @Test
+    public void getSingleUser() {
+        given().get("https://reqres.in/api/users/2").then().assertThat().statusCode(200)
+                .body(matchesJsonSchemaInClasspath("single_user_schema.json")).body("data.id",equalTo(2)).log().all();
+    }
+    @Test
+    public void userNotFound() {
+        given().get("https://reqres.in/api/users/23").then().assertThat().statusCode(404).log().all();
     }
 }

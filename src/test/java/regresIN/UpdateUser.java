@@ -16,4 +16,15 @@ public class UpdateUser {
         given().header("Content-Type","application/json").body(obj.toString()).put("https://reqres.in/api/users/2").
                 then().statusCode(200).log().all();
     }
+    @Test
+    public void updateUserV2Test() {
+        JSONObject obj = new JSONObject();
+        obj.put("name","morpheus");
+        obj.put("job","zion resident");
+
+        given().header("Content-Type","application/json").body(obj.toString()).patch("https://reqres.in/api/users/2").
+                then().statusCode(200).body("name",equalTo("morpheus")).log().all();
+
+
+    }
 }
