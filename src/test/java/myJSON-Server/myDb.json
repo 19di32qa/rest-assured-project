@@ -9,6 +9,16 @@
       "name": "Carl",
       "id": 2,
       "lastName": "Johnson"
+    },
+    {
+      "id": 3,
+      "name": "Tommy",
+      "lastName": "Angelo"
+    },
+    {
+      "id": 4,
+      "name": "Vas",
+      "lastName": "Montenegro"
     }
   ],
   "lotto": {
